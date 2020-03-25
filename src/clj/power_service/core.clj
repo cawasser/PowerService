@@ -2,6 +2,7 @@
   (:require
     [power-service.handler :as handler]
     [power-service.nrepl :as nrepl]
+    [power-service.microservice :as microservice]
     [luminus.http-server :as http]
     [power-service.config :refer [env]]
     [clojure.tools.cli :refer [parse-opts]]
@@ -54,4 +55,5 @@
   (.addShutdownHook (Runtime/getRuntime) (Thread. stop-app)))
 
 (defn -main [& args]
-  (start-app args))
+  (start-app args)
+  (microservice/start (env :service-delay)))
