@@ -128,9 +128,9 @@
 
   [{:keys [exchange msg_type queue content]}]
 
-  (prn "publishing message to " exchange "/" queue
-    " //// (msg_type) " msg_type
-    " //// (content) " content)
+  ;(prn "publishing message to " exchange "/" queue
+  ;  " //// (msg_type) " msg_type
+  ;  " //// (content) " content)
 
   (let [p (get-publisher-for exchange msg_type)]
     (if p

@@ -1,7 +1,7 @@
 (defproject power-service "0.1.0-SNAPSHOT"
 
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
+  :description "Microservice to emit generated power measurement data to a RabbitMQ queue"
+  :url "none"
 
   :dependencies [[ch.qos.logback/logback-classic "1.2.3"]
                  [cheshire "5.10.0"]
