@@ -20,7 +20,7 @@ Delay is set in millisecond, 5000 is equal to 5 seconds.
 You also must be running a RabbitMQ broker instance, either locally or in a docker.
 This service is hardcoded to emit to `my-exchange`// `power.queue`.
 
-You will need a local copy of the dev-config.edn that should contain something like this:
+You will need a local copy of the `dev-config.edn` file at the root dir that should contain something like this:
     
     {:dev true
      :port 5001
